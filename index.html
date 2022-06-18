@@ -7,7 +7,6 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" media="screen and (min-width:376px)">
     <link rel="stylesheet" href="stylemob.css">
-    <script src="app.js"></script>
 </head>
 <body>
     
@@ -19,19 +18,19 @@
         <div id="scr">
 
             <div id="entry">
-                    1x2                 
+                   0                 
             </div>
-            <div id="result">
-                    = 456
+            <div id="results">
+                    
             </div>
         </div>
 
         <!-- ============Keys=============== -->
         <div id="ckeys">
             <div class="key">
-                <button class="button" id = 'clear'>C</button>
-                <button class="button">DEL</button>
-                <button class="button">%</button>
+                <button  id = 'clear'>C</button>
+                <button id = 'del'>DEL</button>
+                <button  id = 'perc'>%</button>
                 <button class="button">/</button>
             
             </div>
@@ -39,13 +38,13 @@
                 <button class="button">7</button>
                 <button class="button">8</button>
                 <button class="button">9</button>
-                <button class="button">x</button>
+                <button class="button">*</button>
             </div>
             <div class="key">
                 <button class="button">4</button>
                 <button class="button">5</button>
                 <button class="button">6</button>
-                <button class="button">_</button>
+                <button class="button">-</button>
             </div>
             <div class="key">
                 <button class="button">1</button>
@@ -56,10 +55,11 @@
             <div class="key last">
                 <button class="button">.</button>
                 <button class="button">0</button>
-                <button class="button" id = 'result'>=</button>
+                <button  id = 'result' onclick = getresult()>=</button>
             </div>
         </div>
     </div>
-    
+    <script src="app.js"></script>
+
 </body>
 </html>

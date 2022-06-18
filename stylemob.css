@@ -67,7 +67,7 @@ body
 
 
 }
-#container #scr #result{
+#container #scr #results{
     display: flex;
     justify-content: right;
     padding-right:2vh;
@@ -100,7 +100,7 @@ body
     justify-content: space-around;;
 }
 
-#container #ckeys .key .button
+#container #ckeys .key .button ,#perc, #del,#result,#clear
 {
     width:7.5vh;
     height: 7.5vh;
@@ -119,14 +119,15 @@ body
     
 }
 
-#container #ckeys .key .button:hover{
+#container #ckeys .key .button:hover, #perc:hover,
+#del:hover,#result:hover,#clear:hover{
     color:rgb(255, 255, 255);
-    box-shadow: 0vh 0vh .1vh 0vh rgb(124, 196, 158);
     border:1px solid rgb(180, 241, 207);
-    background-color: rgb(81, 190, 132);
+    background-color: rgb(96, 233, 160);
 
 }
-#container #ckeys .key .button:focus{
+#container #ckeys .key .button:focus, #perc:focus ,
+ #del:focus,#result:focus,#clear:focus{
     color:rgb(255, 255, 255);
     box-shadow: 0vh 0vh .1vh 0vh rgb(124, 196, 158);
     border:1px solid rgb(180, 241, 207);
