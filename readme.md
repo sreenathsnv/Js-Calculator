@@ -1,4 +1,4 @@
 Calculator App
 
 
-hi Everyone this is Calculator app made using only HTML, CSS and Javascript
+hi Everyone this is Calculator app made Only using  HTML, CSS and Javascript
