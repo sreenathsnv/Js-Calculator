@@ -1,4 +1,7 @@
 
+let result = document.getElementById('results')
+
+result.innerText = 0
 
 let entry = document.getElementById('entry');
 
@@ -34,6 +37,13 @@ function getresult()
 
 let buttons = document.getElementsByClassName('button')
 
+function perc()
+{
+    let result = document.getElementById('results')
+    entry.innerText = ''
+    setValue(result.innerText + '%')
+    result.innerText =  (result.innerText)/100
+}
 
 for(i=0;i<buttons.length;i++)
 {
@@ -41,18 +51,42 @@ for(i=0;i<buttons.length;i++)
 
         // When Operators are used the result section will be erased to
         // provide a clean section
+
         let result = document.getElementById('results')
-        result.innerText = '';
+        
+        // since every time the result will be set to '' after key press. therefore we couldn't
+        //get the result after each operation to do opration with the result 
+        if(result.innerText == '0')
+        {
+            result.innerText = '';
+        }
 
         // the entrybox will be currently has a value 0 but we dont need
         // that to be in concatenation
         if(entry.innerText == '0')
         {
-           entry.innerText = '';
-           setValue(this.innerText); 
+           entry.innerText = ''; 
+           setValue(this.innerText);
+           // first the value within the entrybox is zero. So when a button is pressed the
+            // the zero will be erased and value associated with the button is inserted 
         }
         else{
-            setValue(this.innerText);
+            if(result.innerText == '0' || result.innerText == '')
+            {
+                setValue(this.innerText)
+            }
+            else{
+                if(this.id == 'operator')
+                {
+                    entry.innerText = ''
+                    setValue(result.innerText+ this.innerText)
+                }
+                else{
+                    setValue(this.innerText)
+                }
+            }
+            console.log(result.innerText)
+            
         }
     }
     )
