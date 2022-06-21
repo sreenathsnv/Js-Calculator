@@ -16,8 +16,6 @@ body
     box-sizing: border-box;
     position: relative;
     background: rgb(214, 254, 241);
-    align-items: center;
-    justify-content: center;
     
 }
 
@@ -26,8 +24,8 @@ body
     display:flex;
     justify-content: center;
     flex-direction:row;
-    width:100%;
-    height:80vh;
+    width:90vh;
+    height:200vh;
     background-color:rgb(190, 248, 217);
     box-shadow: 4vh 2vh 2em 0vh rgb(152, 249, 195),
                 inset .5vh .5vh 2em 0vh rgb(183, 250, 213);
@@ -102,8 +100,8 @@ body
 
 #container #ckeys .key .button ,#perc, #del,#result,#clear
 {
-    width:3.5vh;
-    height: 3.5vh;
+    width:8vh;
+    height: 8vh;
     background-color:transparent;
     border:none;
     font-size: 1.5vh;
