@@ -121,13 +121,12 @@ body
 
 #container #ckeys .key .button:hover, #perc:hover,
 #del:hover,#result:hover,#clear:hover{
-    color:rgb(255, 255, 255);
-    border:1px solid rgb(180, 241, 207);
+    color:rgb(255, 255, 255);border:1px solid rgb(180, 241, 207);
     background-color: rgb(96, 233, 160);
 
 }
-#container #ckeys .key .button:focus, #perc:focus ,
- #del:focus,#result:focus,#clear:focus{
+#container #ckeys .key .button:active, #perc:active ,
+ #del:active,#result:active,#clear:active{
     color:rgb(255, 255, 255);
     box-shadow: 0vh 0vh .1vh 0vh rgb(124, 196, 158);
     border:1px solid rgb(180, 241, 207);
