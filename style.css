@@ -25,7 +25,7 @@ body
 {
     display:flex;
     justify-content: center;
-    flex-direction:row;
+    flex-direction:column;
     width:48vh;
     height:78vh;
     background-color:rgb(190, 248, 217);
